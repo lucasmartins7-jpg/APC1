@@ -1,0 +1,38 @@
+
+#define VALOR_REFEICAO 12.50f
+#define VALOR_CAFE 4.00f
+
+int main(void) {
+    int refeicoes;
+    int cafes;
+    float disponivel;
+    float gasto_refeicoes;
+    float gasto_cafes;
+    float gasto_total;
+    float saldo_restante;
+
+    printf("Quantidade de refeicoes na semana: ");
+    scanf("%d", &refeicoes);
+
+    printf("Quantidade de cafes na semana: ");
+    scanf("%d", &cafes);
+
+    /* Calcula os gastos individuais e depois soma o total. */
+    gasto_refeicoes = refeicoes * VALOR_REFEICAO;
+    gasto_cafes = cafes * VALOR_CAFE;
+    gasto_total = gasto_refeicoes + gasto_cafes;
+
+    printf("Valor disponivel no cartao: R$ ");
+    scanf("%f", &disponivel);
+
+    /* O saldo e o valor disponivel menos o gasto total. */
+    saldo_restante = disponivel - gasto_total;
+
+    printf("\n--- ORCAMENTO DA SEMANA ---\n");
+    printf("Gasto com refeicoes: R$ %.2f\n", gasto_refeicoes);
+    printf("Gasto com cafes:     R$ %.2f\n", gasto_cafes);
+    printf("Gasto total:         R$ %.2f\n", gasto_total);
+    printf("Saldo restante:      R$ %.2f\n", saldo_restante);
+
+    return 0;
+}
