@@ -1,0 +1,64 @@
+/*
+ * O scanf("%s") lê uma string somente até encontrar o primeiro espaço.
+ * Assim, ao ler "Maria Silva Souza", ele armazenaria apenas "Maria".
+ * Isso acontece porque %s considera espaços, tabulações e quebras de linha
+ * como separadores de entrada. Para evitar esse problema, este programa
+ * usa fgets() para ler nomes completos, permitindo espaços entre as palavras.
+ * Depois da leitura, o '\n' deixado pelo fgets() é removido da string.
+ * Para os valores numéricos, scanf() é usado com especificadores adequados.
+ */
+
+#
+
+#define TAM 100
+
+int main(void)
+{
+    char cliente[TAM];
+    char produto[TAM];
+    int codigo;
+    int quantidade;
+    float preco_unitario;
+    char categoria;
+        float stdin;
+float total;
+    printf("Nome completo do cliente: ");
+    if (fgets(cliente, TAM, stdin) == 0) {
+        return 1;
+    }
+
+    cliente[strcspn(cliente, "\n")] = '\0';
+
+    printf("Codigo do produto: ");
+    if (scanf("%d", &codigo) != 1) {
+        return 1;
+    }
+
+    /*
+     * Consome o '\n' que ficou no buffer depois do scanf().
+     */
+    while (getchar() != '\n');
+
+    printf("Nome do produto: ");
+    if (fgets(cliente, TAM, stdin) == 0) {
+        return 1;
+    }
+
+    produto[strcspn(produto, "\n")] = '\0';
+
+    printf("Quantidade: ");
+    if (scanf("%d", &quantidade) != 1 || quantidade <= 0) {
+        return 1;
+    }
+
+    printf("Preco unitario: ");
+    if (scanf("%f", &preco_unitario) != 1) {
+        return 1;
+    }
+
+    printf("Categoria (A, B ou C): ");
+    if (scanf(" %c", &categoria) != 1) {
+        return 1;
+    }
+
+    total = quantidade * preco_unitario;
