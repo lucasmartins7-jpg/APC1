@@ -1,0 +1,19 @@
+Execução 1
+Quantidade de refeicoes: 4
+Quantidade de cafes: 3
+Valor disponivel no cartao: 70.00
+
+Gasto refeicoes: 50.00
+Gasto cafes: 12.00
+Gasto total: 62.00
+Saldo restante: 8.00
+
+Execução 2
+Quantidade de refeicoes: 6
+Quantidade de cafes: 2
+Valor disponivel no cartao: 100.00
+
+Gasto refeicoes: 75.00
+Gasto cafes: 8.00
+Gasto total: 83.00
+Saldo restante: 17.00
