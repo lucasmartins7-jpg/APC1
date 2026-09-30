@@ -1,0 +1,70 @@
+==========================================================
+ TESTES - Atividade 03 - Analise de Bolsa
+==========================================================
+
+----------------------------------------------------------
+CENARIO 1: Faixa A com nota alta e pontualidade 'S'
+----------------------------------------------------------
+Entradas:
+  Nome         : Ana Maria Silva
+  Idade        : 20
+  Renda        : 1500.00
+  Media        : 8.80
+  Pontualidade : S
+
+Saida esperada:
+  Faixa Social  : Faixa A
+  Desconto Base : 50.0%
+  Bonus Pontual : 5.0%
+  Desconto Total: 55.0%
+  Status        : APROVADO PARA BOLSA
+
+----------------------------------------------------------
+CENARIO 2: Faixa B com pontualidade 'N'
+----------------------------------------------------------
+Entradas:
+  Nome         : Bruno Costa
+  Idade        : 22
+  Renda        : 3500.00
+  Media        : 9.20
+  Pontualidade : N
+
+Saida esperada:
+  Faixa Social  : Faixa B
+  Desconto Base : 25.0%
+  Bonus Pontual : 0.0%
+  Desconto Total: 25.0%
+  Status        : APROVADO PARA BOLSA
+
+----------------------------------------------------------
+CENARIO 3: Dados invalidos (idade < 16)
+----------------------------------------------------------
+Entradas:
+  Nome         : Carla Dias
+  Idade        : 15
+  Renda        : 1200.00
+  Media        : 9.00
+  Pontualidade : S
+
+Saida esperada:
+  ERRO: Dados invalidos para analise.
+  Idade deve ser >= 16 e renda deve ser > 0.
+  Analise encerrada.
+
+----------------------------------------------------------
+CENARIO 4 (extra): Faixa C com media baixa
+----------------------------------------------------------
+Entradas:
+  Nome         : Diego Alves
+  Idade        : 25
+  Renda        : 8000.00
+  Media        : 8.00
+  Pontualidade : S
+
+Saida esperada:
+  Faixa Social  : Faixa C
+  Desconto Base : 0.0%
+  Bonus Pontual : 5.0%
+  Desconto Total: 5.0%
+  Status        : APROVADO PARA BOLSA
+==========================================================
