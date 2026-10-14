@@ -1,0 +1,34 @@
+TESTE 1 - Documento simples, expediente pleno
+Entrada:
+Servico: 2
+Prioridade: N
+Dia: 4
+
+Resultado esperado:
+Servico: Documento simples
+Prioridade: Normal
+Expediente: Expediente pleno
+
+
+TESTE 2 - Ato solene, urgente, expediente reduzido
+Entrada:
+Servico: 6
+Prioridade: u
+Dia: 6
+
+Resultado esperado:
+Servico: Ato solene
+Prioridade: Urgente
+Expediente: Sexta-feira com expediente reduzido
+
+
+TESTE 3 - Valores invalidos
+Entrada:
+Servico: 9
+Prioridade: X
+Dia: 0
+
+Resultado esperado:
+Servico: Codigo de servico invalido
+Prioridade: Prioridade invalida
+Expediente: Dia invalido
