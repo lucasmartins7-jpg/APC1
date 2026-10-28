@@ -1,0 +1,62 @@
+============================================================
+EVIDENCIAS DE TESTE - SISTEMA DE GESTAO ACADEMICA
+Arquivo: gestao_academica.c
+Compilacao: gcc gestao_academica.c -std=c99 -Wall -Wextra -o gestao
+============================================================
+
+----- TESTE OPCAO 1: Cadastrar Lista de Alunos -----
+Entrada:
+Ana Silva
+Bruno Costa
+Carla Mendes
+Diego Souza
+Elena Rocha
+
+Saida esperada (exemplo):
+Lista de Alunos cadastrados:
+1 - Ana Silva
+2 - Bruno Costa
+3 - Carla Mendes
+4 - Diego Souza
+5 - Elena Rocha
+
+----- TESTE OPCAO 2: Estatisticas de Desempenho -----
+Entrada (notas): 7.5  8.0  6.5  9.0  7.0
+Soma = 38.0  |  Media = 7.60
+Alunos >= media: 2 (8.0, 9.0)
+
+Saida esperada:
+Media geral da turma: 7.60
+Quantidade de alunos com nota >= media: 2
+
+----- TESTE OPCAO 3: Matriz de Notas da Turma -----
+Entrada (3 alunos x 4 bimestres):
+Aluno 1: 7.0  8.0  6.5  9.0
+Aluno 2: 5.5  6.0  7.0  6.5
+Aluno 3: 9.0  8.5  9.5  8.0
+
+Medias: 7.625 | 6.25 | 8.75
+
+Saida esperada (formato tabela):
+Aluno | Bim1   Bim2   Bim3   Bim4  | Media
+------|---------------------------|-------
+  1   |   7.0    8.0    6.5    9.0  | 7.62
+  2   |   5.5    6.0    7.0    6.5  | 6.25
+  3   |   9.0    8.5    9.5    8.0  | 8.75
+
+----- TESTE OPCAO 4: Consultar Aluno em Destaque -----
+Entrada (notas): 6.5  8.0  9.5  7.0  8.5
+Maior nota = 9.5  |  Indice = 2 (aluno 3)
+
+Saida esperada:
+Maior nota da turma: 9.50
+Indice (posicao) encontrado: 2 (aluno 3)
+
+----- TESTE OPCAO 0: Encerrar -----
+Entrada: 0
+Saida: Encerrando o sistema. Ate logo!
+Programa finaliza corretamente.
+
+============================================================
+Todos os requisitos das regras de negocio foram exercitados.
+============================================================
