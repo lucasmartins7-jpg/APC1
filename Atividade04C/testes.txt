@@ -1,0 +1,33 @@
+A. Listagem Completa de Turma (Opção 2)
+Plaintext
+
+---------------------------------------------------------------
+Matricula | Nome                 | A1   | A2   | Media | Status     
+---------------------------------------------------------------
+101       | Ana Silva            | 8.0  | 7.0  | 7.40  | APROVADO   
+102       | Bruno Costa          | 4.0  | 3.0  | 3.40  | RECUPERACAO
+103       | Carlos Eduardo       | 2.0  | 1.5  | 1.70  | REPROVADO  
+---------------------------------------------------------------
+
+B. Busca por Matrícula (Opção 3 — Entrada: 102)
+Plaintext
+
+Informe a matricula para busca: 102
+
+[ALUNO ENCONTRADO]
+Matricula | Nome                 | A1   | A2   | Media | Status     
+---------------------------------------------------------------
+102       | Bruno Costa          | 4.0  | 3.0  | 3.40  | RECUPERACAO
+---------------------------------------------------------------
+
+C. Busca por Trecho de Nome (Opção 4 — Entrada: "Eduardo")
+Plaintext
+
+Digite um trecho do nome para busca: Eduardo
+
+--- Resultados da busca por 'Eduardo' ---
+Matricula | Nome                 | A1   | A2   | Media | Status     
+---------------------------------------------------------------
+103       | Carlos Eduardo       | 2.0  | 1.5  | 1.70  | REPROVADO  
+---------------------------------------------------------------
+Total de correspondencias: 1
